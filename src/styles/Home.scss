@@ -1,0 +1,51 @@
+@import 'colors.scss';
+.home{
+    display: flex;
+    padding: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: black;
+}
+.Productcard{
+    background-color: $tertiary;
+    width: 200px;
+    margin: 2rem;
+    border-radius: 5%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ;
+    p{
+        color: $primary;
+    }
+    h4{
+        color: $primary;
+    }
+    button{
+        color: $primary;
+    }
+    >img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    button{
+        cursor: pointer;
+        background-color: $secondry;
+        border: none;
+        color:$tertiary;
+        border-radius: 5%;
+        transition: all 0.5s;
+        font-weight: 500;
+        width: 100%;
+        &:hover{
+            background-color: $secondrydark;
+        }
+        font-size: large;
+        padding: 2%;
+    }
+    &:hover{
+        transform: scale(1.06);
+    }
+}

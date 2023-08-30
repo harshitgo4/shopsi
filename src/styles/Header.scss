@@ -1,0 +1,42 @@
+@import 'colors.scss';
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: $secondrydark;
+    padding: 0 2rem;
+    >div{
+        display: flex;
+        justify-content: space-between;
+        width: 5rem;
+       // margin-top: 1rem;
+        p{
+            position: absolute;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 15px;
+            width: 15px;
+            font: 900 0.9rem 'Roboto';
+            transform: translate(90%,40%);
+        }
+      
+        a{
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            &:hover{
+                opacity: 0.5;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+    h2{
+        text-decoration:underline;
+        //margin-top: 1rem;
+        text-transform: uppercase;
+        color: $primary;
+    }
+}

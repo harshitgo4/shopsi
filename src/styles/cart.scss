@@ -1,0 +1,83 @@
+@import 'colors.scss';
+.cart{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+    >main{
+        padding:2rem;
+        overflow-y: auto;
+        color: $primarydark;
+        h1{
+            font:100 2rem 'Roboto';
+        }
+        p{
+            color:$primarydark;
+            font-size: 1.2rem;
+            font-weight: 700;
+            font-family: 'Roboto';
+        }
+        h3{
+            color: $primarydark;
+        }
+        button{
+            background-color: $secondry;
+            font-size: large;
+            padding: 2%;
+            width: 2rem;
+            font-weight: 900;
+            outline: none;
+            cursor: pointer;
+            &:hover{
+                background-color: $secondrydark;
+            }
+        }
+    }
+    >aside{
+        border-radius: 100px 0 0 100px;
+        background-color: $primary;
+        color: $tertiary;
+        background-color: $primary;
+        box-shadow: -10px 0px 10px rgba(0,0,0,0.182);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        >h2{
+            margin:1rem;
+            font:100 1.7rem 'Roboto';
+            letter-spacing: 2px;
+            &:last-of-type{
+                font-weight: 600;
+            }
+        }
+    }
+}
+.cartitem{
+    background-color: $tertiary;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    align-items: center;
+    img{
+        height: 100%;
+        width:100%;
+        object-fit:contain;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        >p{
+            margin: 0 3%;
+        }
+        
+    }
+    button{
+        align-items: center;
+        icn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
